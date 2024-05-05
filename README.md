@@ -14,6 +14,14 @@ It does not have any specific data type. It can return data of any type dependin
 * HttpResponseMessage – It will convert the response to an HTTP message.
 * IHttpActionResult – internally calls ExecuteAsync to create an HttpResponseMessage
 * Other types – You can write the serialized return value into the response body
+
+
+## 2. How do we limit access to methods with an HTTP verb in Web API?
+An attribute has to be added/
+* HttpGet
+* HttpPost
+* HttpDelete
+* HttpPut
 </details>
 
 ## Contributing
