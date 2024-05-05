@@ -22,6 +22,21 @@ An attribute has to be added/
 * HttpPost
 * HttpDelete
 * HttpPut
+
+
+## 3. How can we register exception filter from the action?
+We can register exception filter from action using following code:
+```
+[NotImplExceptionFilter]
+public TestCustomer GetMyTestCustomer(int custid)
+{
+}
+```
+Or you can register exception filter globally using following code:
+```
+GlobalConfiguration.Configuration.Filters.Add (new MyTestCustomerStore.NotImplExceptionFilterAttribute());
+```
+[More Info.](https://learn.microsoft.com/en-us/aspnet/web-api/overview/error-handling/exception-handling)
 </details>
 
 ## Contributing
