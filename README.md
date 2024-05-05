@@ -26,7 +26,7 @@ An attribute has to be added/
 
 ## 3. How can we register exception filter from the action?
 We can register exception filter from action using following code:
-```
+```C#
 [NotImplExceptionFilter]
 public TestCustomer GetMyTestCustomer(int custid)
 {
@@ -37,6 +37,17 @@ Or you can register exception filter globally using following code:
 GlobalConfiguration.Configuration.Filters.Add (new MyTestCustomerStore.NotImplExceptionFilterAttribute());
 ```
 [More Info.](https://learn.microsoft.com/en-us/aspnet/web-api/overview/error-handling/exception-handling)
+
+
+## 4. How Can assign alias name for ASP.NET Web API Action?
+We can give alias name for Web API action same as in case of ASP.NET MVC by using “ActionName” attribute as follows:
+```C#
+[ActionName("SaveStudentInfo")]
+public void UpdateStudent(Student aStudent)
+{
+}
+```
+[More Info.](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionnameattribute?view=aspnet-mvc-5.2)
 </details>
 
 ## Contributing
