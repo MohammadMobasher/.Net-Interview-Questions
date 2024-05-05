@@ -48,6 +48,10 @@ public void UpdateStudent(Student aStudent)
 }
 ```
 [More Info.](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionnameattribute?view=aspnet-mvc-5.2)
+
+
+## 5. What is CORS in Web API?
+CORS (Cross-Origin Resource Sharing) is basically a mechanism that allows one to make requests from one website to another website in a browser that is normally not allowed by another policy called SOP (Same Origin Policy). It supports secure cross-origin requests and data transfers among clients or browsers and servers. Here, cross-origin request means requests coming from different origins. CORS simply resolves the same-origin restriction for JavaScript. One can enable CORS for web API using the respective web API package or OWIN middleware. 
 </details>
 
 ## Contributing
